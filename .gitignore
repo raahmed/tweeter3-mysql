@@ -23,6 +23,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.env
 MANIFEST
 
 # PyInstaller
@@ -86,15 +87,16 @@ celerybeat-schedule
 # SageMath parsed files
 *.sage.py
 
-# Environments
+# Environments and certificates
 .env
 .venv
 env/
+tweeterenv/
 venv/
 ENV/
 env.bak/
 venv.bak/
-
+cert.ca
 # Spyder project settings
 .spyderproject
 .spyproject
