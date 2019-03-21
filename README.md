@@ -10,38 +10,21 @@ Tweeter3 is a basic example Django application that uses [Django Rest Framework]
     ```shell
     $ git clone https://github.com/nnja/tweeter3
     ```
-1. `cd` intro the project directory
+2. `cd` intro the project directory
     ```shell
     $ cd tweeter3
     ```
-1. Create a new virtual environment using Python 3.7 and activate it.
+3. Create a new virtual environment using Python 3.7 and activate it.
     ```shell
     $ python3 -m venv env
     $ source env/bin/activate
     ```
-1. Install dependencies from requirements.txt:
+4. Install dependencies from requirements.txt:
     ```shell
     (env)$ pip install -r requirements.txt
     ```
-1. Migrate the database.
-    ```shell
-    (env)$ python manage.py migrate
-    ```
-1. *(Optionally)* load sample fixtures that will populate the database with a handful of users and tweeters.
 
-    **Note:** If fixtures are loaded, a sample user named 'Bob' will always be logged in by default.
-    ```shell
-    (env)$ python manage.py loaddata initial_data
-    ```
-1. Run the local server via:
-    ```shell
-    (env)$ python manage.py runserver
-    ```
-
-### Done!
-The local application will be available at <a href="http://localhost:8000" target="_blank">http://localhost:8000</a>, and the browsable api will be available at <a href="http://localhost:8000/api" target="_blank">http://localhost:8000/api</a>
-
-If you need to update static assets, make sure to run collect static.
+5. Update static assets, make sure to run collect static.
 ```shell
 (env) $ python manage.py collectstatic
 ```
@@ -79,15 +62,13 @@ $ set -a; source .env; set +a
 
 Follow Azure instructions on obtaining a certificate for connecting to MySQL servers over SSL.
 
-### Create and configure an Azure PostgreSQL Server
+### Create and configure an Azure MySQL Server and connect to it 
 
-Navigate to the Azure Portal and search for MySQL server.
-Create a server and configure Firewall settings.
+1. Navigate to the Azure Portal and search for MySQL server.
 
+2. Create a server and configure Firewall settings.
 
-# Connect to the MySQL Database using the command line.
-
-Use the Azure MySQL tutorial to connect to your MySQL server. Once connected, create a MySQL database.
+3. Use the Azure MySQL tutorial to connect to your MySQL server. Once connected, create a MySQL database.
 
 # Lastly, run migrations on your production database and optionally load fixtures.
 
